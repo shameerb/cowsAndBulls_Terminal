@@ -7,13 +7,14 @@ cows=0
 bulls=0
 game_round=0
 game_limit=5
+word_length=4
 game_end=False
 history_stack=[]
 
 def createWord():
     global word_list,cows,bulls,game_round
     game_round=0
-    word_list=sample(range(0,9),4)
+    word_list=sample(range(0,9),word_length)
     #print word_list
     history_stack=[]
 #Need to remove first 0
